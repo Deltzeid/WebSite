@@ -1,0 +1,232 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(22, 21, 21);
+    border: 4px solid rgb(12, 132, 187);
+}
+
+.top {
+    display: flex;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 174, 255);
+}
+
+.top a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    color: rgb(0, 174, 255);
+    box-sizing: border-box;
+    background-color: rgb(22, 21, 21);
+    font-family: Arial, Helvetica, sans-serif; /* This was added later. */
+}
+
+.Intro {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    border: 4px solid rgb(12, 132, 187);
+    border-top: none;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    "head head head"
+    "body body body"
+    "new new new"
+    "info info info";
+}
+
+.header {
+    grid-area: head;
+}
+
+.body {
+    grid-area: body;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 21, 21); 
+  }
+  
+  .modal-content {
+    background-color: rgb(22, 21, 21); 
+    margin: 15% auto; 
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 4px solid rgb(12, 132, 187);
+    width: 80%; 
+    text-align: center;
+  }
+  
+  .close {
+    display: none;
+  }
+  
+  #acceptTermsBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(45, 22, 180);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #acceptTermsBtn:hover {
+    background-color: rgb(28, 12, 117);
+  }
+
+
+.New {
+    border: 4px solid rgb(12, 132, 187);
+    border-top: none;
+    height: 90px;
+}
+
+.New {
+    grid-area: new;
+    border-bottom: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.Info {
+    grid-area: info;
+    border: 4px solid rgb(12, 132, 187);
+    border-top: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.info-ti {
+    text-decoration: underline;
+}
+
+.ab-t {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.ab-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: auto;
+    background-color: rgb(32, 32, 32); 
+    padding: 20px; 
+}
+
+.ab-me * {
+    color: rgb(0, 174, 255); 
+    background-color: transparent; 
+}
+
+.who-me {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.d-title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.dload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: auto;
+    background-color: rgb(32, 32, 32); 
+    padding: 20px; 
+}
+
+.dload * {
+    color: rgb(0, 174, 255); 
+    background-color: transparent; 
+}
+
+.d1 {
+    display: flex;
+    font-weight: bold;
+}
+
+.d-logo {
+    display: flex;
+    align-items: center; 
+}
+
+.d-logo img {
+    max-width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.termes {
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-areas:
+        "t-t" 
+        "introdu" 
+        "ter"; 
+    gap: 20px; 
+    width: 600px;
+    margin: auto;
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+}
+
+.t-t {
+    grid-area: t-t;
+    text-align: center; 
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.introdu {
+    grid-area: introdu;
+    color: rgb(0, 174, 255); 
+    margin-top: 0; 
+}
+
+.ter {
+    grid-area: ter;
+    color: rgb(0, 174, 255); 
+}
+
+.termes * {
+    color: rgb(0, 174, 255); 
+    background-color: transparent; 
+}
+
+.b {
+    text-decoration: underline;
+}
+
